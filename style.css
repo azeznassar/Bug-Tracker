@@ -1,0 +1,24 @@
+.form-control::-webkit-input-placeholder { color: white; }  
+.form-control:-moz-placeholder { color: white; }  
+.form-control::-moz-placeholder { color: white; }  
+
+.md-form {
+    padding-bottom: 1em;
+}
+
+.badge {
+    font-weight: 300;
+}
+
+#header {
+    padding: 0.7em;
+    padding-top: 0.4em;
+}
+
+input {
+    font-weight: 300;
+}
+
+#buttons {
+    justify-content: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bug Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">Bug Tracker <span class="fa fa-bug fa-2x"></span></h1>
+        <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2">
+            <h1><span class="badge indigo darken-2">Add New Bug</span></h1>
+            <form id="bugInput">
+                <div class="md-form">
+                    <label for="bugDesc" class="white-text">Description</label>
+                    <input type="text" class="form-control white-text" id="bugDesc" placeholder="Describe the bug">
+                </div>
+                <div class="md-form">
+                    <label for="bugAssigned" class="white-text">Assigned To</label>
+                    <input type="text" class="form-control white-text" id="bugAssigned" placeholder="Who is responible for the fix?">
+                </div>
+                <div class="md-form">
+                    <select id="bugSev" class="form-control white-text">
+                        <option value="Low">Severity: Low</option>
+                        <option value="Medium">Severity: Medium</option>
+                        <option value="High">Severity: High</option>
+                    </select>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-white" type="submit">Submit Bug</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-12">
+            <div id="bugList"></div>
+        </div>
+    </div>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="main.js"></script>
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+</body>
+</html>
